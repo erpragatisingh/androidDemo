@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="course">
+        <item> MCA </item>
+        <item> MBA </item>
+        <item> PGDM </item>
+        <item> BCA </item>
+        <item> BBA </item>
+        <item>B.Tech</item>
+        <item> B.Pharma </item>
+        <item>B.Ed</item>
+    </string-array>
+    
+    
+    
+    
+
+</resources>

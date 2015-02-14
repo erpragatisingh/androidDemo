@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="top">
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:id="@+id/textView1" android:layout_width="match_parent" android:text="Enter your massage" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"></TextView>
+    <Gallery android:id="@+id/gallery1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/textView1" android:layout_alignParentLeft="true" android:layout_marginTop="185dp"></Gallery>
+    <Gallery android:id="@+id/gallery2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/textView1" android:layout_alignParentLeft="true" android:layout_marginTop="195dp"></Gallery>
+    <Gallery android:id="@+id/gallery3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginRight="117dp"></Gallery>
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:inputType="textPostalAddress" android:id="@+id/editText1" android:layout_alignParentRight="true" android:layout_alignParentLeft="true" android:layout_below="@+id/textView1">
+        <requestFocus></requestFocus>
+    </EditText>
+    <Button android:layout_height="wrap_content"
+     android:id="@+id/button1"
+      android:text="Send"
+       android:layout_width="wrap_content"
+        android:layout_below="@+id/editText1" 
+        android:layout_alignParentLeft="true" 
+        android:layout_alignParentRight="true"
+        
+        android:onClick="showmain">
+        </Button>
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:stretchColumns="*" 
+        >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/frameLayout1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/android" >
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </FrameLayout>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/frameLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </FrameLayout>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/frameLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+
+                 <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="246dp"
+                    android:layout_height="wrap_content"
+                    android:text="WELCOME in IIMT Gr.Noida"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="211dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:onClick="afterClickOnText"
+                    android:text="Dronacharya College of Engineering.
+                     Moving towards the excellence of Education and  experience 
+                     in delivering Quality Education."
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000" />
+            </LinearLayout>
+        </FrameLayout>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:id="@+id/frameLayout5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2" >
+
+            <TableLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/back" >
+
+                <TableRow>
+
+                    <TextView
+                        android:text="User Name:"
+                        android:textColor="#F5F5DC"
+                        android:width="120dp" />
+
+                    <EditText
+                        android:id="@+id/txtUserName"
+                        android:hint="User Name"
+                        android:width="200dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="Password:"
+                        android:textColor="#F5F5DC" />
+
+                    <EditText
+                        android:id="@+id/txtPassword"
+                        android:hint="Password"
+                        android:password="true" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/buttonSignIn"
+                        android:onClick="login"
+                        android:text="Log In" />
+
+                  /*  */
+
+                </TableRow>
+            </TableLayout>
+        </FrameLayout>
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+          android:text="" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" New user Sign Up Here....."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+
+</TableLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent" 
+        android:text="@string/button1_label"
+        android:onClick="randomizeColor"/>
+    <Button 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent" 
+        android:text="@string/button2_label"
+        android:onClick="randomizeColor"/>
+    <TextView 
+        android:id="@+id/text_region"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:textSize="48dp"
+        android:gravity="center_horizontal"
+        android:text="@string/main_text"/>
+</LinearLayout>

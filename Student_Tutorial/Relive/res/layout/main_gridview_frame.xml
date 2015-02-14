@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="71dip" android:layout_height="71dip"
+	android:focusable="false" android:focusableInTouchMode="false">
+
+	<ImageView android:id="@+id/icon" 
+		android:layout_width="70dip"
+		android:layout_height="70dip" 
+		android:scaleType="centerCrop"
+		>
+	</ImageView>
+</FrameLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:layout_centerHorizontal="true"
+	android:id="@+id/rootViewWithPaging">
+	
+	<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Photos" 
+        android:textSize="20sp"
+        android:singleLine="true"
+        android:paddingLeft = "14dip"
+        android:layout_marginTop = "12dip"
+        android:textColor="#ffffffff"
+        >
+    </TextView>
+    
+    <!-- android:layout_centerHorizontal="true"-->
+    <ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_marginTop = "30dip"
+    	android:layout_below="@+id/textView"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:id="@+id/PageBarViewFlipper">
+		<RelativeLayout android:id="@+id/RelativeLayout01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			>
+			
+	<ImageView android:id="@+id/recentImageView"
+		android:cropToPadding="true"
+    	android:paddingLeft="14dip"
+		android:layout_width="156dip"
+		android:layout_height="142dip" 
+		android:scaleType="centerCrop"
+		>
+<!-- 		
+android:layout_centerVertical="true"
+ -->		
+		</ImageView>
+	<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recentTextView"
+        android:layout_below = "@id/recentImageView"
+        android:layout_width="142dip"
+        android:layout_height="wrap_content"
+        android:text="@string/main_recent" 
+        android:textSize="20sp"
+        android:layout_marginTop = "10dip"
+        android:editable="false"
+        android:textColor="#99ffffff"
+        android:paddingLeft="14dip"
+        />
+        
+    <FrameLayout android:id="@+id/YearFrameLayout"
+		android:layout_toRightOf="@id/recentImageView"
+	 	android:paddingLeft="13dip"
+		android:layout_width="155dip"
+		android:layout_height="142dip">
+
+		<ImageView android:id="@+id/dateImageView"
+			android:scaleType="centerCrop"
+			android:cropToPadding="true"
+			android:layout_width="155dip"
+			android:layout_height="142dip" />
+
+		<TextView android:id="@+id/yearTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="40dip"
+			android:layout_gravity="bottom|right"></TextView>
+	</FrameLayout>
+
+	<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/dateTextView"
+        android:layout_width="142dip"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:layout_marginTop = "10dip"
+        android:layout_toRightOf="@id/recentTextView"
+        android:layout_below = "@id/YearFrameLayout"
+        android:text="@string/main_date" 
+        android:textSize="20sp"
+        android:paddingLeft="26dip"
+        android:textColor="#99ffffff"/>
+		
+	<GridView android:id="@+id/GridView01"
+		android:scaleType="centerCrop"
+    	android:layout_height="142dip"
+		android:layout_width="155dip"
+		android:paddingLeft="13dip"
+		android:layout_toRightOf="@id/YearFrameLayout"
+		android:numColumns="2" 
+		android:listSelector="#00000000"
+		android:scrollbars="none">
+	</GridView>
+	
+	<ImageView android:id="@+id/locationImageView"
+		android:scaleType="centerCrop"
+		android:cropToPadding="true"
+    	android:layout_height="142dip"
+		android:layout_width="155dip"
+		android:paddingLeft="13dip"
+		android:layout_toRightOf="@id/YearFrameLayout"
+		android:visibility="gone"/>
+		
+	<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:paddingLeft = "13dip"
+        android:id="@+id/gridTextView"
+        android:layout_width="142dip"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:layout_marginTop = "10dip"
+        android:layout_toRightOf="@id/YearFrameLayout"
+        android:layout_below = "@id/GridView01"
+        android:textSize="20sp"
+        android:textColor="#99ffffff"/>
+		
+		</RelativeLayout>
+	</ViewFlipper>
+	
+	<RelativeLayout android:id="@+id/PagingBars"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_marginBottom="25dip" android:gravity="center_horizontal">
+
+		<Button android:id="@+id/page1" android:layout_width="70dip"
+			android:layout_height="2dip" android:background="@drawable/gray"
+			android:layout_alignParentBottom="true" />
+
+		<Button android:id="@+id/page2" android:layout_width="70dip"
+			android:layout_height="2dip" android:background="@drawable/gray"
+			android:layout_alignParentBottom="true" android:layout_marginLeft="10dip"
+			android:layout_toRightOf="@id/page1" />
+
+		<Button android:id="@+id/page3" android:layout_width="70dip"
+			android:layout_height="2dip" android:background="@drawable/gray"
+			android:layout_alignParentBottom="true" android:layout_marginLeft="10dip"
+			android:layout_toRightOf="@id/page2" />
+
+		<Button android:id="@+id/page4" android:layout_width="70dip"
+			android:layout_height="2dip" android:background="@drawable/gray"
+			android:layout_alignParentBottom="true" android:layout_marginLeft="10dip"
+			android:layout_toRightOf="@id/page3" />
+
+		<Button android:id="@+id/page5" android:layout_width="70dip"
+			android:layout_height="2dip" android:background="@drawable/gray"
+			android:layout_alignParentBottom="true" android:layout_marginLeft="10dip"
+			android:layout_toRightOf="@id/page4" />
+
+
+	</RelativeLayout>
+	
+	
+</RelativeLayout>

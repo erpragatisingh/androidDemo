@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Project2Activity!</string>
+    <string name="app_name">AccountTracker</string>
+<string name="category">Select a Category</string>
+    <string-array name="category_array">
+        <item>Bills</item>
+        <item>Clothing</item>
+        <item>Deposit</item>
+        <item>Eating Out</item>
+        <item>Entertainment</item>
+        <item>Gifts</item>
+        <item>Payment</item>
+         <item>Salary</item>
+         <item>Transportation</item>
+        </string-array>
+
+   
+<string name="accounts">Select a Category</string>
+    <string-array name="accounts_array">
+        <item>Savings</item>
+        <item>Current</item>
+        <item>Business</item>
+        
+        </string-array>
+    
+
+        <string name="one">One</string>
+        <string name="in">In</string>
+            <string name="equal">Is Equal To</string>
+            <string name="result">Click Calculate for Result</string>
+            <string name="calculate">Calculate</string>
+    <string-array name="name">
+        <item >Indian Rupee</item>
+        <item >US Dollar</item>
+        <item >European Union Euro</item>
+        <item >Canadian Dollar</item>
+        <item >Australian Dollar</item>
+        <item >Singapore Dollar</item>
+    </string-array>
+    <string-array name="value">
+        <item >INR</item>
+        <item >USD</item>
+        <item >EUR</item>
+        <item >CAD</item>
+        <item >AUD</item>
+        <item >SGD</item>
+    </string-array>
+
+    </resources>

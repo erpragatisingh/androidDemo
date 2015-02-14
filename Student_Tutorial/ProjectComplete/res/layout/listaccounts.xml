@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     android:background="@drawable/bpaper"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tap on the account to get details!"
+        android:textColor="#0000ff"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnAddAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addAccount"
+            android:text="Add Account" />
+
+        <Button
+            android:id="@+id/btnAddTransaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addTransaction"
+            android:text="Add Trans" />
+
+        <Button
+            android:id="@+id/btnRecentTransactions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="recentTransactions"
+            android:text="Recent Trans" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15" >
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="42dp"
+            android:background="@drawable/arrow_left3" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button2"
+            android:layout_below="@+id/button2"
+            android:text="Go to MainMenu"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+
+<ListView
+    android:id="@+id/listAccounts"
+    android:layout_width="match_parent"
+    android:layout_height="221dp"
+    android:layout_weight="0.83" >
+
+    </ListView>
+    
+</LinearLayout>

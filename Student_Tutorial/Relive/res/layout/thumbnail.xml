@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/root" android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+	<RelativeLayout android:id="@+id/topLayout" 
+				android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true">
+       <ImageButton android:id="@+id/mainBtn"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:background="@drawable/main_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        />
+        <ImageButton android:id="@+id/shareBtn"
+                android:layout_toRightOf="@+id/mainBtn"
+                android:layout_gravity="center"
+                android:background="@drawable/share_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        />
+        <ImageButton android:id="@+id/deleteBtn"
+                android:layout_toRightOf="@+id/shareBtn"
+                android:layout_gravity="center"
+                android:background="@drawable/delete_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        />
+         <ImageButton android:id="@+id/nextBtn"
+        		android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:background="@drawable/done_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        />
+        <ImageButton android:id="@+id/cancelBtn"
+        		android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_toLeftOf="@+id/nextBtn"
+                android:background="@drawable/cancel_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        />
+       <TextView android:id="@+id/shareText"
+        		android:visibility="gone"
+        		android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Select images to share"
+                android:textColor="#FFBEBEBE"
+                android:textSize="18dp"
+        />
+        <TextView android:id="@+id/delText"
+                android:visibility="gone"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Select images to delete"
+                android:textColor="#FFBEBEBE"
+                android:textSize="18dp"
+        />
+    </RelativeLayout>
+    <LinearLayout android:id="@+id/midLayout" 
+    			android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/topLayout">
+	
+        <view class="com.android.kcamera.GridViewL"
+                android:id="@+id/gridL"
+                android:focusable="true"
+                android:fastScrollEnabled="true"        		       
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@drawable/grid_background"
+        />      
+    </LinearLayout>
+
+    <RelativeLayout android:id="@+id/no_images"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <ImageView
+                android:id="@+id/no_pictures_image"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_gallery_empty2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        />
+
+        <TextView
+                android:layout_below="@id/no_pictures_image"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/image_gallery_NoImageView_text"
+                android:textColor="#FFBEBEBE"
+                android:textSize="18dp"
+        />
+    </RelativeLayout>
+	<LinearLayout android:id="@+id/ll" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="right" android:paddingTop="300px"
+		android:paddingRight="10px">
+
+		<view class="com.android.GalleryRnD.ThumbScrollBar.ThumbScroller"
+			android:id="@+id/seek" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:max="100" android:progress="0"
+			android:secondaryProgress="100" />
+	</LinearLayout>
+</RelativeLayout>
+
